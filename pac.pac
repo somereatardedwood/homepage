@@ -11,11 +11,15 @@ function FindProxyForURL(url, host)
         }
     else if (dnsDomainIs(host, 'pornhub.com'))
         {
-            return 'SOCKS [324:71e:281a:9ed3::fa11]:1080';
+            return 'SOCKS5 [324:71e:281a:9ed3::fa11]:1080';
+        }
+    else if (dnsDomainIs(host, 'pornhub.org'))
+        {
+            return 'SOCKS5 [324:71e:281a:9ed3::fa11]:1080';
         }
     else if (dnsDomainIs(host, 'donmai.us'))
         {
-            return 'HTTP [324:71e:281a:9ed3::fa11]:3128';
+            return 'SOCKS5 127.0.0.1:1080';
         }
     else if (shExpMatch(dnsResolveEx(host), "*:*"))
         {
