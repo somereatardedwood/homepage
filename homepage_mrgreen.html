@@ -1,0 +1,181 @@
+<head>
+    <title>homepage</title>
+    <style>
+		.search-form {
+			display: flex;
+			align-items: center;
+			border: 1px solid #303d4d;
+			border-radius: 4px;
+			overflow: hidden;
+			max-width: 700px;
+			margin: 0 auto;
+			margin-bottom: 30px;
+            margin-top: 0px
+		}
+
+		.search-form-2 {
+			display: flex;
+			align-items: center;
+			border: 1px solid #303d4d;
+			border-radius: 4px;
+			overflow: hidden;
+			max-width: 700px;
+			margin: 0 auto;
+			margin-bottom: 30px;
+            margin-top: 300px
+		}
+
+		.search-form input[type="text"] {
+			flex: 1;
+			padding: 10px;
+			border: none;
+			background-color: #303d4d;
+			color: #f7c068;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		.search-form-2 input[type="text"] {
+			flex: 1;
+			padding: 10px;
+			border: none;
+			background-color: #303d4d;
+			color: #f7c068;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		.search-form input[type="submit"] {
+			padding: 10px 20px;
+			border: none;
+			font-size: 16px;
+			cursor: pointer;
+			color: #f7c068;
+			background-color: #303d4d;
+		}
+
+		.search-form-2 input[type="submit"] {
+			padding: 10px 20px;
+			border: none;
+			font-size: 16px;
+			cursor: pointer;
+			color: #f7c068;
+			background-color: #303d4d;
+		}
+
+		input[type="text"]:focus{
+			outline: none;
+		}
+    
+    	.favorites {
+    		display: grid;
+    		grid-template-columns: 1fr 1fr 1fr;
+    		grid-gap: 10px;
+    		text-align: left;
+    		margin: 0 auto;
+			max-width: 700px;
+    	}
+    	
+    	.list {
+    		background-color: #303d4d;
+    		padding: 10px;
+    		color: #f77067;
+    		font-weight: bold;
+    		font-family: courier;
+    		border: 1px solid #303d4d;
+    		border-radius: 4px;
+    	}
+
+    	a {
+    		color: #f7c068;
+    		font-weight: bold;
+    		text-decoration: none;
+    	}
+
+    	a:hover {
+			text-decoration: underline;
+    	}
+    	
+		body {
+			text-align: center;
+			background-color: #3C4C60;
+			color: #F7C068;
+			font-family: courier;
+		}
+    </style>
+</head>
+
+<body>
+	
+	<div>
+		<form action="https://search.revvy.de/search.php" method="get" class="search-form-2">
+			<input type="text" name="q" autocomplete="off" placeholder="Искать въ LibreY">
+			<input type="submit" value="Искать">
+		</form>
+	</div>
+
+	<div>
+		<form action="http://revekebotog64xrrammtsmjwtwlg3vqyzwdurzt2pu6botg4bejq.b32.i2p/search.php" method="get" class="search-form">
+			<input type="text" name="q" autocomplete="off" placeholder="Искать въ LibreY.i2p">
+			<input type="submit" value="Искать">
+		</form>
+	</div>
+
+	<div class="favorites">
+		<div class="list">
+			$ важное
+			<ul>
+				<li><a href="https://home.mephi.ru/">хомякъ</a></li>
+				<li><a href="https://stepik.org/learn?auth=login">степикъ</a></li>
+				<li><a href="https://www.wolframalpha.com/">вольфрамъ</a></li>
+				<li><a href="https://mark.nl.tab.digital/apps/deck">ежедневникъ</a></li>
+			</ul>
+		</div>
+		<div class="list">
+			$ соціальныя сѣти
+			<ul>
+                <li><a href="https://vk.com/im">вконтактѣ</a></li>
+			</ul>
+		</div>
+		<div class="list">
+			$ разное
+			<ul>
+				<li><a href="https://www.youtube.com/feed/subscriptions">youtube</a></li>
+                <li><a href="https://www.litres.ru/static/or3/view/or.html?art_type=4&file=102526117&bname=%25D0%259C%25D0%25B0%25D1%2582%25D0%25B5%25D0%25BC%25D0%25B0%25D1%2582%25D0%25B8%25D0%25BA%25D0%25B0%253A%2520%25D0%25B0%25D0%25BB%25D0%25B3%25D0%25B5%25D0%25B1%25D1%2580%25D0%25B0%2520%25D0%25B8%2520%25D0%25BD%25D0%25B0%25D1%2587%25D0%25B0%25D0%25BB%25D0%25B0%2520%25D0%25BC%25D0%25B0%25D1%2582%25D0%25B5%25D0%25BC%25D0%25B0%25D1%2582%25D0%25B8%25D1%2587%25D0%25B5%25D1%2581%25D0%25BA%25D0%25BE%25D0%25B3%25D0%25BE%2520%25D0%25B0%25D0%25BD%25D0%25B0%25D0%25BB%25D0%25B8%25D0%25B7%25D0%25B0%252C%2520%25D0%25B3%25D0%25B5%25D0%25BE%25D0%25BC%25D0%25B5%25D1%2582%25D1%2580%25D0%25B8%25D1%258F.%2520%25D0%2590%25D0%25BB%25D0%25B3%25D0%25B5%25D0%25B1%25D1%2580%25D0%25B0%2520%25D0%25B8%2520%25D0%25BD%25D0%25B0%25D1%2587%25D0%25B0%25D0%25BB%25D0%25B0%2520%25D0%25BC%25D0%25B0%25D1%2582%25D0%25B5%25D0%25BC%25D0%25B0%25D1%2582%25D0%25B8%25D1%2587%25D0%25B5%25D1%2581%25D0%25BA%25D0%25BE%25D0%25B3%25D0%25BE%2520%25D0%25B0%25D0%25BD%25D0%25B0%25D0%25BB%25D0%25B8%25D0%25B7%25D0%25B0.%252010%25E2%2580%259411%2520%25D0%25BA%25D0%25BB%25D0%25B0%25D1%2581%25D1%2581%25D1%258B.%2520%25D0%2591%25D0%25B0%25D0%25B7%25D0%25BE%25D0%25B2%25D1%258B%25D0%25B9%2520%25D0%25B8%2520%25D1%2583%25D0%25B3%25D0%25BB%25D1%2583%25D0%25B1%25D0%25BB%25D1%2591%25D0%25BD%25D0%25BD%25D1%258B%25D0%25B9%2520%25D1%2583%25D1%2580%25D0%25BE%25D0%25B2%25D0%25BD%25D0%25B8&art=68294983&user=1119299038&uuid=c505fbc5-4656-11ed-96ee-0cc47af30dde&cover=%2Fpub%2Fc%2Fcover%2F68294983.jpg&uilang=ru">алгебра</a></li>
+                <li><a href="https://www.mtggoldfish.com/metagame/pauper/full#paper">беднякъ колоды</a></li>
+                <li><a href="http://192.168.3.84:4200/">mpd телефонъ</a></li>
+				<li><a href="https://slavenica.com">славеница</a></li>
+			</ul>
+		</div>
+		<div class="list">
+			$ i2p
+			<ul>
+				<li><a href="http://localhost:7070">i2pd консоль</a></li>
+				<li><a href="http://i2pd.i2p">i2pd.i2p</a></li>
+				<li><a href="http://acetone.i2p">ацетонъ</a></li>
+				<li><a href="http://reg.i2p">i2p регистратура</a></li>
+				<li><a href="http://lunach.i2p">луначъ</a></li>
+				<li><a href="http://nadezhda-project.i2p">надежда</a></li>
+				<li><a href="http://librespeed.i2p">скорость подключения</a></li>
+				<li><a href="http://2tiwhibsjvys63t43xncar6y52dy3dpct6edglenhzlalmyirb2a.b32.i2p/">мосты tor</a></li>
+				<li><a href="http://flibusta.i2p/">библіотека</a></li>
+				<li><a href="http://nex.i2p/">библіотека</a></li>
+			</ul>
+		</div>
+		<div class="list">
+			$ yggdrasil
+			<ul>
+				<li><a href="http://[324:71e:281a:9ed3::ace]/index.html">ацетонъ</a></li>
+				<li><a href="http://[300:ffb4:8643:34d8::f1fa:1]/">скорость подключения</a></li>
+				<li><a href="http://[200:c528:a707:dc0f:282b:104c:dd3d:ce7c]/">stable diffusion</a></li>
+				<li><a href="http://[21e:a51c:885b:7db0:166e:927:98cd:d186]/">списокъ страницъ</a></li>
+			</ul>
+		</div>
+		<div class="list">
+			$ tor
+			<ul>
+				<li><a href="http://acetonemadzhxzi2e5tomavam6xpucdfwn2g35vrsz6izgaxv5bmuhad.onion/index.html">ацетонъ</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
