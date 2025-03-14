@@ -1,24 +1,24 @@
 # Homepage
-A minimalist browser startpage with a clock, search bar and 3 bookmark categories. It used to be just a gruvbox startpage, but now it has 3 more themes, each based on a different plasma configuration I had/have.
+A homepage .html files collection forked from [pa5sarinho/homepage](https://github.com/pa5sarinho/homepage). My own file (homepage_mrgreen) was created for using alongside Otto KDE theme. I also changed search engine to [LibreY](https://github.com/Ahwxorg/librey/) [@codedipper](https://github.com/codedipper)'s instances in clearnet, i2p and tor with mode switcher. Clock was removed. Pointer type for search form changed to 'text'. Submit button is now underlined at hover. Of course, custom favorites were added. Russian pre-revolutionary language is used. 
 
-## Gruvbox
+There is also a 'homepage_mrgreen_gentoo' variant that is currently outdated because I've broken my installation.
 
-![gruvbox theme](screenshots/gruvbox.png)
+Anyone can access any homepage variant stored in this repository by adding variant filename to https://somereatardedwood.github.io/homepage/ link, i.e. https://somereatardedwood.github.io/homepage/homepage_mrgreen.html.
 
-## Solarized Light
+Since I am not a developer at all, I used ChatGPT to understand html and then write some parts for me. Most of the time there are comments besides ChatGPT's lines. 
 
-![Solarized theme](screenshots/solarized.png)
+I also created a PAC script that I use in [IceCat](https://icecatbrowser.org/index.html) on my laptop and [Cromite](https://github.com/uazo/cromite) on my android device. Script is optimized for usage of i2pd default socks proxy for i2p websites, tor default socks proxy for tor websites, no proxy for yggdrasil websites, [byedpi](https://github.com/hufrea/byedpi) socks proxy for websites blocked in Russian Federation (though byedpi currently doesn't work on my laptop), and [acetone's yggdrasil socks proxy](https://yggdrasil-network.github.io/services.html) for websites that are blocked for users in Russian Federation.
 
-## Solarized Dark
+## Otto
 
-This one uses Microsoft's cascadia code font.
+![otto theme](screenshots/otto.png)
 
-![Solarized Dark](screenshots/solarized_dark.png)
+Font in the screenshot is 'Monomakh Unicode'.
 
-## Stone
+## Homepage deployment guide for dummies/noncoders/nondevs as myself
 
-![stone theme](screenshots/stone.png)
-
-## Reactionary (Windows 9X)
-
-![Reactionary theme](screenshots/reactionary.png)
+1. Fork original repo/fork this repo/write your own html??
+2. Change the code to your desires (i.e., change favorites list or colours). If you don't understand something — ~~google~~ librey, rtfm or use AIs
+3. Push changes to your fork
+4. On github website in your repo go to Settings->Pages, use 'Deploy static content to Pages' workflow
+5. Go to https://username.github.io/reponame/filename, i.e. https://somereatardedwood.github.io/homepage/homepage_mrgreen.html
