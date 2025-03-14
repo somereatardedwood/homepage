@@ -151,8 +151,8 @@
 	<form id="searchForm" class="search-form" method="get">
 		<select id="searchMode" name="mode">
 			<option value="clearnet">clearnet</option>
-			<option value="tor">i2p</option>
-			<option value="i2p">tor</option>
+			<option value="i2p">i2p</option>
+			<option value="tor">tor</option>
 		</select>
 		<input type="text" name="q" autocomplete="off" placeholder="искать въ LibreY">
 		<input type="submit" value="искать">
@@ -191,7 +191,7 @@
 				<li><a href="http://localhost:7070">i2pd консоль</a></li>
 				<li><a href="http://i2pd.i2p">i2pd.i2p</a></li>
 				<li><a href="http://nadezhda-project.i2p">надежда</a></li>
-				<li><a href="http://librespeed.i2p">скорость подключения</a></li>
+				<li><a href="http://librespeed.i2p">скорость подключенія</a></li>
 				<li><a href="http://2tiwhibsjvys63t43xncar6y52dy3dpct6edglenhzlalmyirb2a.b32.i2p/">мосты tor</a></li>
 				<li><a href="http://flibusta.i2p/">библіотека</a></li>
 			</ul>
@@ -200,7 +200,7 @@
 			$ yggdrasil
 			<ul>
 				<li><a href="http://[324:71e:281a:9ed3::ace]/index.html">ацетонъ</a></li>
-				<li><a href="http://[300:ffb4:8643:34d8::f1fa:1]/">скорость подключения</a></li>
+				<li><a href="http://[300:ffb4:8643:34d8::f1fa:1]/">скорость подключенія</a></li>
 				<li><a href="http://[21e:a51c:885b:7db0:166e:927:98cd:d186]/">списокъ страницъ</a></li>
 			</ul>
 		</div>
@@ -228,11 +228,11 @@
 				case 'clearnet':
 					searchUrl = 'https://search.revvy.de/search.php?q=' + encodeURIComponent(searchTerm);
 					break;
-				case 'tor':
-					searchUrl = 'http://search.revvybrr6pvbx4n3j4475h4ghw4elqr4t5xo2vtd3gfpu2nrsnhh57id.onion/search.php?q=' + encodeURIComponent(searchTerm);
-					break;
 				case 'i2p':
 					searchUrl = 'http://revekebotog64xrrammtsmjwtwlg3vqyzwdurzt2pu6botg4bejq.b32.i2p/search.php?q=' + encodeURIComponent(searchTerm);
+					break;
+				case 'tor':
+					searchUrl = 'http://search.revvybrr6pvbx4n3j4475h4ghw4elqr4t5xo2vtd3gfpu2nrsnhh57id.onion/search.php?q=' + encodeURIComponent(searchTerm);
 					break;
 			}
 	
