@@ -4,7 +4,7 @@ function FindProxyForURL(url, host)
     // I2P
     if (dnsDomainIs(host, '.i2p'))
         {
-            return 'SOCKS5 127.0.0.1:4447';
+            return 'HTTP 127.0.0.1:4444';
         }
 
     // Tor
@@ -55,11 +55,11 @@ function FindProxyForURL(url, host)
     // ChatGPT
     else if (dnsDomainIs(host, 'openai.com'))
         {
-            return 'SOCKS5 127.0.0.1:9050';
+            return 'SOCKS5 [324:71e:281a:9ed3::fa11]:1080';
         }
     else if (dnsDomainIs(host, 'chatgpt.com'))
         {
-            return 'SOCKS5 127.0.0.1:9050';
+            return 'SOCKS5 [324:71e:281a:9ed3::fa11]:1080';
         }
 
     // Discord
