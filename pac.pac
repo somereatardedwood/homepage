@@ -120,6 +120,14 @@ function FindProxyForURL(url, host)
     // Soundcloud
     else if (dnsDomainIs(host, 'soundcloud.com'))
     {
-        return 'SOCKS5 127.0.0.1:4447';
+        return 'SOCKS5 [324:71e:281a:9ed3::fa11]:1080';
+    }
+    else if (dnsDomainIs(host, 'sndcdn.com'))
+    {
+	return 'SOCKS5 [324:71e:281a:9ed3::fa11]:1080';
+    }
+    else if (dnsDomainIs(host, 'soundcloud.com'))
+    {
+	return 'SOCKS5 [324:71e:281a:9ed3::fa11]:1080';
     }
 }
