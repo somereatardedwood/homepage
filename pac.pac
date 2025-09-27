@@ -13,15 +13,8 @@ function FindProxyForURL(url, host)
             return 'SOCKS5 127.0.0.1:9050';
         }
 
-    // Yggdrasil
-    else if (shExpMatch(dnsResolveEx(host), "*:*"))
-        {
-            return 'DIRECT';
-        }
-
     // PornHub
-    else if (dnsDomainIs(host, 'pornhub.com')
-    )
+    else if (dnsDomainIs(host, 'pornhub.com'))
         {
             return 'SOCKS5 [324:71e:281a:9ed3::fa11]:1080';
         }
