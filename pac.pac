@@ -133,4 +133,8 @@ function FindProxyForURL(url, host)
     {
         return 'SOCKS5 [324:71e:281a:9ed3::fa11]:1080';
     }
+    else if (dnsDomainIs(host, 'rutrk.org'))
+    {
+        return 'SOCKS5 [324:71e:281a:9ed3::fa11]:1080';
+    }
 }
