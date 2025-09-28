@@ -137,4 +137,10 @@ function FindProxyForURL(url, host)
     {
         return 'SOCKS5 [324:71e:281a:9ed3::fa11]:1080';
     }
+
+    // corsproxy.io??? dunno wat is tat but i need that for RAweb tampermonkey userscript to work
+    else if (dnsDomainIs(host, 'corsproxy.io'))
+    {
+        return 'SOCKS5 [324:71e:281a:9ed3::fa11]:1080';
+    }
 }
